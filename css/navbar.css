@@ -1,0 +1,100 @@
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.navbar .brand {
+  padding-right: 30px;
+  padding-left: 0;
+  float: left;
+  font-weight: bold;
+  color: #000000;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+  -webkit-transition: all .2s linear;
+  -moz-transition: all .2s linear;
+  transition: all .2s linear;
+}
+.navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+/* Tweak Navbar for WordPress' Classes
+-------------------------------------------------- */
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+}
+.navbar .navbar-fixed-top {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+  margin-bottom: 18px;
+}
+.navbar .nav.pull-right {
+  float: right;
+}
+.navbar .nav > li {
+  display: block;
+  float: left;
+}
+.navbar ul li {
+  display: inline;
+  line-height: 19px;
+}
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: #999999;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #222222;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.current_page_item {
+  margin-left: 0;
+  list-style: none;
+}
+.page_item {
+  list-style: none;
+}
+.navbar .page_item a {
+  color: #999999;
+  float: none;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: #999999;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+.navbar .current_page_item a {
+  color: #ffffff;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: #999999;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #222222;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.navbar .page_item > a:hover {
+  background-color: transparent;
+  color: #ffffff;
+  text-decoration: none;
+}
+.navbar .current_page_item > a,
+.navbar .nav .current_page_item > a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #222222;
+  background-color: rgba(0, 0, 0, 0.5);
+}

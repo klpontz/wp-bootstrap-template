@@ -1,0 +1,167 @@
+// GLOBAL VALUES
+// --------------------------------------------------
+
+
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #eee;
+@white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #049cdb;
+@blueDark:              #0064cd;
+@green:                 #46a546;
+@red:                   #9d261d;
+@yellow:                #ffc40d;
+@orange:                #f89406;
+@pink:                  #c3325f;
+@purple:                #7a43b6;
+
+// Links
+// -------------------------
+@linkColor:             #08c;
+@linkColorHover:        darken(@linkColor, 15%);
+
+// Navbar
+// -------------------------
+@navbarHeight:                    40px;
+@navbarBackground:                @grayDarker;
+@navbarBackgroundHighlight:       @grayDark;
+
+@navbarText:                      @grayLight;
+@navbarLinkColor:                 @grayLight;
+@navbarLinkColorHover:            @white;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      @navbarBackground;
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    #ccc;
+
+// NAVBAR
+// _______________________________________________________________________________ \\
+
+/* Tweak navbar brand link to be super sleek
+-------------------------------------------------- */
+.navbar .brand {
+  padding-right: 30px;
+  padding-left: 0;
+  float: left;
+  font-weight: bold;
+  color: @black;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
+  -webkit-transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
+}
+.navbar-fixed-top .brand:hover {
+  text-decoration: none;
+}
+
+/* Tweak Navbar for WordPress' Classes
+-------------------------------------------------- */
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;
+}
+.navbar .navbar-fixed-top {
+  position: relative;
+  left: 0;
+  display: block;
+  float: left;  
+  margin-bottom: 18px;
+}
+.navbar .nav.pull-right {
+  float: right; // redeclare due to specificity
+}
+.navbar .nav > li {
+  display: block;
+  float: left;
+}
+.navbar ul li {
+  display: inline;
+  line-height: 19px;
+}
+
+// Links
+.navbar .nav > li > a {
+  float: none;
+  padding: 10px 10px 11px;
+  line-height: 19px;
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+
+// Hover
+.navbar .nav > li > a:hover {
+  background-color: transparent;
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+}
+
+// Active nav items
+.navbar .nav .active > a,
+.navbar .nav .active > a:hover {
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+  background-color: @navbarBackground;
+  background-color: rgba(0,0,0,.5);
+}
+
+// Links for WordPress classes
+.current_page_item {
+  margin-left: 0;
+  list-style: none;
+}
+.page_item {
+  list-style: none;
+}
+
+.navbar .page_item a {
+  color: @grayLight;
+  float: none;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+}
+
+.navbar .current_page_item a {
+  color: @white;
+  padding: 13px 10px 13px;
+  line-height: 19px;
+  color: @navbarLinkColor;
+  text-decoration: none;
+  text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+  background-color: @navbarBackground;
+  background-color: rgba(0,0,0,.5);
+}
+
+// Hover for WordPress
+.navbar .page_item > a:hover {
+  background-color: transparent;
+  color: @navbarLinkColorHover;
+  text-decoration: none;
+}
+
+// Active nav items for WordPress
+.navbar .current_page_item > a,
+.navbar .nav .current_page_item > a:hover {
+  color: @navbarLinkColorActive;
+  text-decoration: none;
+  background-color: @navbarBackground;
+  background-color: rgba(0,0,0,.5);
+}
