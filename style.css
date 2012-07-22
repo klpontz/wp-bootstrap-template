@@ -1,0 +1,12 @@
+/*
+Theme Name: My theme
+Theme URI: http://thissite.com/
+Description: This is a description of my theme
+Author: Kevin Rocci @ Brown Bag Web Design
+Author URI: http://brownbagwebdesign.com
+Version: 1.0
+*/
+
+#mainContent {
+	margin-top: 23px;
+}
