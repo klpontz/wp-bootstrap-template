@@ -1,19 +1,20 @@
 /* Tweak navbar brand link to be super sleek
--------------------------------------------------- */
+-------------------------------------------------- 
 .navbar .brand {
   padding-right: 30px;
   padding-left: 0;
   float: left;
   font-weight: bold;
-  color: #000000;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 0 30px rgba(255, 255, 255, 0.125);
+  color: @black;
+  text-shadow: 0 1px 0 rgba(255,255,255,.1), 0 0 30px rgba(255,255,255,.125);
   -webkit-transition: all .2s linear;
-  -moz-transition: all .2s linear;
-  transition: all .2s linear;
+     -moz-transition: all .2s linear;
+          transition: all .2s linear;
 }
 .navbar-fixed-top .brand:hover {
   text-decoration: none;
 }
+*/
 /* Tweak Navbar for WordPress' Classes
 -------------------------------------------------- */
 .navbar .nav {
